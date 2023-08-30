@@ -9,7 +9,7 @@ import Tag from "../components/ficheLogement/Tag";
 import Collapse from "../components/Collapse";
 
 const FichLogment = () => {
-// Récupère l'id depuis l'url (voire routine dans app.jsx) en utilisant le hook useparams
+// Récupère l'id depuis l'url (voire routing dans app.jsx) en utilisant le hook useparams
   const { id } = useParams();
 // on récupère la fiche logement correspondante à l'id demandé dans l'url
   const ficheLogement = DataFichLogement.find((logement) => logement.id === id);
